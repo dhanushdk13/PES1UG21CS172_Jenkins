@@ -10,9 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                dir('main') {
                     sh './PES1UG21CS172'
-                }
             }
         }
         stage('Deploy') {
